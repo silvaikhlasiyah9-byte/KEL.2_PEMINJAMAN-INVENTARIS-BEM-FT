@@ -12,12 +12,12 @@ class pages extends BaseController
         echo view('pages/home', $data);
     }
 
-     public function about()
+     public function databarang()
     {
          $data = [
-            'tittle' => 'BEM FT | Barang'
+            'tittle' => 'BEM FT | Data Barang'
         ];
-        echo view('pages/about', $data);
+        echo view('pages/databarang', $data);
     }
 
     public function contact()

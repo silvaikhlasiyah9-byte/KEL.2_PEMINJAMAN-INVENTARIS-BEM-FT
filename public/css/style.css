@@ -1,34 +1,165 @@
+body {
+    margin: 0;
+    background: linear-gradient(to right, #556d94, #8089af, #7ca7d9);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* NAVBAR */
+.navbar {
+    height: 56px;
+    z-index: 1030; /* lebih tinggi dari sidebar */
+}
+
+.navbar-top {
+    background-color: #24609c;
+}
+
 /* SIDEBAR */
 .sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 230px;
-  height: 100vh;
-  background-color: #f8f9fa;
-  border: none;
-  box-shadow: none;
+    position: fixed;
+    top: 56px;              /* mulai di bawah navbar */
+    left: 0;
+    width: 240px;
+    height: calc(100vh - 56px);
+    background-color: #ffffff;
 }
 
-
-/* KONTEN GESER KE KANAN */
+/* KONTEN */
 .content {
-  margin-left: 230px;
-  padding: 20px;
+    margin-left: 250px;
+    margin-top: 56px;
+    padding: 20px;
 }
 
-/* LINK FULL WIDTH */
-.sidebar .nav-link {
-  padding: 12px 15px;
+.sidebar-header {
+    text-align: center;      /* teks ke tengah */
 }
 
-.sidebar .nav-link:hover {
-  background-color: #e9ecef;
+.sidebar-header button {
+    margin: 0 auto;          /* tombol ke tengah */
+    display: block;
 }
 
-.sidebar .navbar-brand {
-  display: block;
+.sidebar-logo {
+    width: 70px;              /* pas utk sidebar */
+    height: 70px;
+    margin: 6px auto 4px;     /* center + jarak rapi */
+    border-radius: 50%;
+    overflow: hidden;         /* POTONG JADI BULAT */
+    border: 2px solid #ffffff;   /* opsional */
+}
+
+/* Gambar logo */
+.sidebar-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        /* tidak gepeng */
+}
+
+/* HOME */
+.main-content {
+    display: flex;                  /* aktifkan flexbox */
+    justify-content: center;        /* rata tengah horizontal */
+    align-items: center;            /* rata tengah vertikal */
+    text-align: center;             /* teks di dalam rata tengah */  /* tinggi 100% layar */
+}
+
+/* Styling teks */
+.main-content h1,
+.main-content p {
+    color: white;                   /* teks putih */
+    margin: 0;
+}
+
+/* Responsive jika ingin padding untuk sidebar atau navbar */
+@media (min-width: 768px) {
+    .main-content {
+        padding-left: 220px;       /* jarak jika ada sidebar */
+        padding-top: 70px;         /* jarak jika ada navbar atas */
+    }
+}
+
+.main-content {
+    display: flex;                  /* aktifkan flexbox */
+    justify-content: center;        /* rata tengah horizontal */
+    align-items: center;            /* rata tengah vertikal */
+    text-align: center;             /* teks di dalam rata tengah */
+    flex-direction: column;         /* agar button berada di bawah teks */
+}
+
+/* Styling teks */
+.main-content h1,
+.main-content p {
+    color: white;                   /* teks putih */
+    margin: 0.3rem 0;
+}
+
+/* Button */
+.main-content .btn {
+    background-color: #004080;      /* biru tua */
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.main-content .btn:hover {
+    background-color: #b8d5f1;      /* efek hover */
+    transform: scale(1.05);         /* sedikit membesar saat hover */
+}
+
+/*databarang*/
+
+.header-barang {
+  background-color: #c0cfe4; /* biru keabu-abuan */
+  color: rgb(38, 50, 100);
+}
+
+.text-judul {
+  color: #202f46; /* biru gelap */
   font-weight: bold;
+}
+
+
+
+.main-content {
+  margin-left: 240px;     /* sama dengan lebar sidebar */
+  padding: 10px;
+}
+
+
+.table-safe {
+  margin: 0 auto 0 55px;          /* tengah + geser dari sidebar */
+  width: 120%;
+  max-width: 850px;
+  overflow-x: auto;
+  display: block;
+  padding: 10px;
+}
+
+.table-safe table th,
+.table-safe table td {
+  padding: 6px 5px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .table-safe {
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.table td .btn {
+  padding: 4px 8px;
+  font-size: 12px;
+  line-height: 1.2;
 }
 
 
