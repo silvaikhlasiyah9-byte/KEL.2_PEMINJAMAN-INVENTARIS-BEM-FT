@@ -162,4 +162,116 @@ body {
   line-height: 1.2;
 }
 
+/*RIWAYAT PEMINJAMAN*/
+/* AREA KONTEN (supaya tidak kena sidebar) */
+.main-content {
+  margin-left: 240px;   /* sesuaikan dengan lebar sidebar */
+  padding: 20px;
+}
+
+/* TABEL RIWAYAT */
+.riwayat-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.riwayat-table table {
+  width: 100%;
+  table-layout: fixed;
+  font-size: 14px;
+}
+
+.riwayat-table th,
+.riwayat-table td {
+  vertical-align: middle;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* Lebar kolom agar proporsional */
+.riwayat-table th:nth-child(1),
+.riwayat-table td:nth-child(1) { width: 5%; }
+
+.riwayat-table th:nth-child(2),
+.riwayat-table td:nth-child(2) { width: 25%; }
+
+.riwayat-table th:nth-child(3),
+.riwayat-table td:nth-child(3) { width: 15%; }
+
+.riwayat-table th:nth-child(4),
+.riwayat-table td:nth-child(4),
+.riwayat-table th:nth-child(5),
+.riwayat-table td:nth-child(5) { width: 15%; }
+
+.riwayat-table th:nth-child(6),
+.riwayat-table td:nth-child(6) { width: 10%; }
+
+.riwayat-table th:nth-child(7),
+.riwayat-table td:nth-child(7) { width: 15%; }
+
+/* Tombol aksi */
+.aksi-btn {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+/* Biar halaman tidak geser ke kanan */
+body {
+  overflow-x: hidden;
+}
+
+/* Contact*/
+/* supaya konten tidak ketiban sidebar */
+.main-content {
+  margin-left: 250px; /* sesuaikan dengan lebar sidebar */
+  padding: 20px;
+}
+
+.contact-title{
+  font-size: 36px;      /* perbesar tulisan */
+  font-weight: bold;   /* bold */
+  color: #ffffff;      /* putih */
+}
+
+
+/* card contact */
+.contact-box {
+  width: 100%;
+  max-width: 260px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* icon */
+.contact-box i {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* button */
+.contact-box a {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* warna */
+.whatsapp i { color: #25D366; }
+.whatsapp a { background: #25D366; }
+
+.instagram i { color: #E1306C; }
+.instagram a { background: #E1306C; }
+
+.email i { color: #0d6efd; }
+.email a { background: #0d6efd; }
+
+
+
 

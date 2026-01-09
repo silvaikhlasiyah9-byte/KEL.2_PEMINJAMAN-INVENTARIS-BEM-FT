@@ -20,6 +20,14 @@ class pages extends BaseController
         echo view('pages/databarang', $data);
     }
 
+    public function riwayatpeminjaman()
+    {
+         $data = [
+            'tittle' => 'BEM FT | Riwayat Peminjaman'
+        ];
+        echo view('pages/riwayatpeminjaman', $data);
+    }
+
     public function contact()
     {
         $data = [
