@@ -2,9 +2,6 @@
 
 <?= $this->section('content'); ?>
 
-<?= $this->extend('layout/template'); ?>
-<?= $this->section('content'); ?>
-
 <div class="main-content">
   <div class="container-fluid">
 
@@ -83,4 +80,3 @@
 
 <?= $this->endSection(); ?>
 
-<?= $this->endSection(); ?>

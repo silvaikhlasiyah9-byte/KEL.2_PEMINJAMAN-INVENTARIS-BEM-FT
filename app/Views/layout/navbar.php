@@ -33,7 +33,7 @@
     <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
         <div class="navbar-nav flex-column text-center">
             <a class="nav-link py-1 active" href="/">Home</a>
-            <a class="nav-link py-1" href="/pages/databarang">Data Barang</a>
+            <a class="nav-link py-1" href="/DataBarang">Data Barang</a>
             <a class="nav-link py-1" href="/pages/riwayatpeminjaman">Riwayat Peminjaman</a>
             <a class="nav-link py-1" href="/pages/contact">Contact</a>
             <a class="nav-link py-1 text-danger" href="/pages/logout">Sign Out</a>
