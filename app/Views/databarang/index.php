@@ -32,7 +32,6 @@
               <td><?= $d['tempat']; ?></td>
               <td class="tempat">
         <div class="d-grid gap-1">
-        <a href="#" class="btn btn-success btn-sm">Pinjam</a>
         <a href="/databarang/edit/<?= $d['id']; ?>" class="btn btn-primary btn-sm">Edit</a>
         <a href="/databarang/delete/<?= $d['id']; ?>" class="btn btn-danger btn-sm">Hapus</a>
          </div>

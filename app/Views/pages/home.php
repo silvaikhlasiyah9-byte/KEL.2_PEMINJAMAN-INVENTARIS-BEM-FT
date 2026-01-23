@@ -7,7 +7,7 @@
         <h1 class="display-4">INVENTARIS BEM FT UM</h1>
         <p class="lead">Kelola inventaris dan peminjaman barang dengan mudah.</p>
 
-        <a href="/pages/databarang" class="btn btn-primary btn-lg mt-4">Pinjam Barang</a>
+        <a href="/peminjaman" class="btn btn-primary btn-lg mt-4">Pinjam Barang</a>
     </div>
 </div>
 <?= $this->endSection(); ?>

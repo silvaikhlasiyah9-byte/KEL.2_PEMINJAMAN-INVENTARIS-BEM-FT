@@ -14,7 +14,13 @@ body {
 }
 
 .navbar-top {
-    background-color: #24609c;
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* sesuaikan dengan tinggi navbar */
+    z-index: 1000;
+    background-color: #24609c
 }
 
 /* SIDEBAR */
@@ -271,6 +277,36 @@ body {
 
 .email i { color: #0d6efd; }
 .email a { background: #0d6efd; }
+
+/* form peminjaman */
+.custom-card {
+    margin-left: auto; /* geser 50px ke kanan */
+}
+
+/* jangan sentuh sidebar */
+.content-wrapper {
+    margin-left: 250px; /* SESUAI LEBAR SIDEBAR */
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* KETENGAH */
+}
+
+/* box riwayat */
+.riwayat-box {
+    width: 100%;
+    max-width: 700px; /* SUPER COMPACT */
+    font-size: 13px;
+}
+
+/* table compact */
+.riwayat-box table td {
+    padding: 2px 4px;
+}
+
+.card {
+   margin-top: 80px;
+}
+
 
 
 

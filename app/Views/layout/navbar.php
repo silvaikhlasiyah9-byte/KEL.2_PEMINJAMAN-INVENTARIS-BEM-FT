@@ -4,7 +4,7 @@
         <span class="text-white">Administrator</span>
     </div>
 </nav>
-<nav class="navbar sidebar">
+<nav class="navbar sidebar position-fixed vh-100">
 
 <div class="container-fluid d-flex flex-column px-3 pt-0">
 
@@ -34,9 +34,9 @@
         <div class="navbar-nav flex-column text-center">
             <a class="nav-link py-1 active" href="/">Home</a>
             <a class="nav-link py-1" href="/DataBarang">Data Barang</a>
-            <a class="nav-link py-1" href="/pages/riwayatpeminjaman">Riwayat Peminjaman</a>
+            <a class="nav-link py-1" href="/peminjaman/riwayat">Riwayat Peminjaman</a>
             <a class="nav-link py-1" href="/pages/contact">Contact</a>
-            <a class="nav-link py-1 text-danger" href="/pages/logout">Sign Out</a>
+            <a class="nav-link py-1 text-danger" href="/logout">LogOut</a>
         </div>
     </div>
 
