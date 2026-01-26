@@ -1,13 +1,13 @@
 <?= $this->extend('layout/template') ?>
 <?= $this->section('content') ?>
 
-<div class="container-fluid mt-4" style="margin-left: 120px;">
-    <div class="d-flex justify-content-center gap-3 mt-3 mx-auto">
+<div class="container-fluid pt-2" style="margin-left: 120px;">
+    <div class="d-flex justify-content-center gap-3">
 
         <!-- FORM PEMINJAMAN -->
-        <div class="card shadow-sm p-3" style="width: 700px;">
+        <div class="card shadow-sm p-2" style="width: 700px;">
            <?php if(session()->getFlashdata('success')): ?>
-<div class="position-fixed top-0 start-50 translate-middle-x mt-3" style="z-index: 1050; width: auto;">
+<div class="position-fixed top-0 start-50 translate-middle-x mt-2" style="z-index: 1050; width: auto;">
     <div class="alert alert-success alert-dismissible fade show" role="alert">
         <?= session()->getFlashdata('success'); ?>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
@@ -16,7 +16,7 @@
 <?php endif; ?>
 
 <?php if(session()->getFlashdata('error')): ?>
-<div class="position-fixed top-0 start-50 translate-middle-x mt-3" style="z-index: 1050; width: auto;">
+<div class="position-fixed top-0 start-50 translate-middle-x mt-2" style="z-index: 1050; width: auto;">
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
         <?= session()->getFlashdata('error'); ?>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
@@ -27,9 +27,9 @@
 <form action="<?= base_url('peminjaman/store_dynamic') ?>" method="post">
     <?= csrf_field() ?>
 
-    <h4 class="text-center mb-3">Form Peminjaman</h4>
+    <h4 class="text-center mb-1">Form Peminjaman</h4>
 
-    <div class="d-flex gap-3 mt-3" style="flex-wrap: nowrap; margin-left: 5px;">
+    <div class="d-flex gap-3" style="flex-wrap: nowrap; margin-left: 5px;">
         
         <!-- Kotak Form Peminjaman (kiri) -->
         <div class="card shadow-sm p-3" style="width: 400px;">

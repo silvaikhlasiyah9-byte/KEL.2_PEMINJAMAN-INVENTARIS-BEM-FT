@@ -67,6 +67,7 @@ body {
 
 /* HOME */
 .main-content {
+  min-height: 100vh;
     display: flex;                  /* aktifkan flexbox */
     justify-content: center;        /* rata tengah horizontal */
     align-items: center;            /* rata tengah vertikal */
@@ -305,6 +306,27 @@ body {
 
 .card {
    margin-top: 80px;
+}
+
+
+/* Wrapper flex form */
+.card form > .d-flex {
+    align-items: flex-start; /* pastikan sejajar atas */
+}
+
+/* Card kiri & kanan dinaikkan */
+.card form .d-flex .card {
+    margin-top: 10px;   /* angkat ke atas */
+}
+
+/* Hilangkan dorongan ke kanan */
+.card form > .d-flex {
+    margin-left: 0 !important;
+}
+
+/* Rapatkan isi */
+.mb-2 {
+    margin-bottom: 6px !important;
 }
 
 
